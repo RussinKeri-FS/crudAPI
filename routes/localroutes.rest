@@ -1,0 +1,27 @@
+GET http://localhost:8000/students
+
+###
+
+GET http://localhost:8000/students/[id]
+
+###
+
+POST http://localhost:8000/students 
+Content-Type: application/json
+
+{
+    "name": "Keri Russin", "class": "DWA"
+}
+
+###
+
+PATCH http://localhost:8000/students/62f715c0a828a1171fe71d25
+Content_Type: application/json
+
+{
+    "name": "Keri Russin", "class": "DWA"
+}
+
+###
+
+DELETE http://localhost:8000/students/62f715c0a828a1171fe71d25
